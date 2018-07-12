@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  border: 0px solid;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+    
+  background-color: #fb565a;
+  border: none;  
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b,
+  color: rgb (255, 255, 255, 0.3),
+}
+
+.main-header {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.cart {
+  font-weight: 500;
+}
+
+.cart::before {
+  content: "";  
+  background-image: url(../img/cart-icon.svg);
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart:hover,
+.cart:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart a:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.site-navigation-current a {
+  border-bottom: 3px solid #fb565a;
+}
+
+.service h3 {
+  text-align: left;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.service p {
+  text-align: left;  
+}
+
+.order-button-2 {
+  background-color: #00ca74;
+}
+
+.order-button-2:hover,
+.order-button-2:focus {
+  background-color: #00bc6c;
+}
+
+.order-button-2:active {
+  background-color: #00aa62;
+}
+
+.order-button-3 {
+  background-color: #efc84a;
+}
+
+.order-button-3:hover,
+.order-button-3:focus {
+  background-color: #eab534;
+}
+
+.order-button-3:active {
+  background-color: #e5a722;
+}
+
+.title {
+  background-color: #eeeeee;
+}
+
+.clients li {
+  opacity:  0.2;
+}
+
+.clients li:hover {
+  opacity:  1;    
+}
+
+.clients li a:active {
+  opacity:  0,1;
+}
+
+.page-title h1 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;  
+}
+
+.filters legend,
+.sorting h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background: url(../img/radio-off.svg) left top no-repeat;
+}
+
+input[type="radio"]:checked + label span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background: url(../img/radio-on.svg) left top no-repeat;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: middle;
+  background: url(../img/checkbox-off.svg) left top no-repeat;
+}
+
+input[type="checkbox"]:checked + label span {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: middle;
+  background: url(../img/checkbox-on.svg) left top no-repeat;
+}
+
+.catalog-item::before {
+  content: "";
+  background-image: url("../img/browser.svg"); 
+  display: block;
+  width: 360px;
+  height: 40px;
+  opacity: 0.12;    
+ }
+
+.catalog-item:hover::before {
+  content: "";
+  background-image: url("../img/browser.svg"); 
+  display: block;
+  width: 360px;
+  height: 40px;
+  opacity: 1;    
+ }
+
+.catalog-item-card {
+  background: #eeeeee;
+  opacity: 0;
+  width:  360px;
+  height: 230px;
+ }
+
+.catalog-item-card:hover {
+  opacity: 1;
+}
+
+.catalog-item-card h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.catalog-item-card p{
+  line-height: 18px;  ;
+  text-align: center; 
+  vertical-align: middle;
+}
+.footer-social b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer-social p {
+  line-height: 22px;
+}
+
+.social-button {
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  background-color: #d7373b;
+}
