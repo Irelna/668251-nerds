@@ -28,7 +28,9 @@ fieldset {
 
 .button {
   font: inherit;
-
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -44,23 +46,28 @@ fieldset {
 }
 
 .button:active {
-  background-color: #d7373b,
-  color: rgb (255, 255, 255, 0.3),
+  background-color: #d7373b;
+  border-top: 3px solid #c13135;
+  color: (255, 255, 255, 0.3);
 }
 
 .main-header {
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
   background-color: #eeeeee;
 }
 
-.site-navigation {
+.site-navigation a {
   list-style: none;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .cart {
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .cart::before {
@@ -98,6 +105,7 @@ fieldset {
 
 .service h3 {
   text-align: left;
+  font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -138,6 +146,44 @@ fieldset {
   background-color: #eeeeee;
 }
 
+.slide h3 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.services strong {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.services b,
+.statistics caption {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.orders-list li::before {
+  content: ""
+      .Layer_23_copy_3 {
+  background-image: url("Layer 23 copy 3.png");
+  position: absolute;
+  
+}
+
+}
+
+.statistics tr:first-child {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+ sup {
+  font-size: 26px;
+}
+
 .clients li {
   opacity:  0.2;
 }
@@ -174,6 +220,25 @@ input[type="radio"] + label span {
   height: 25px;
   vertical-align: middle;
   background: url(../img/radio-off.svg) left top no-repeat;
+  opacity: 0.4;
+}
+
+input[type="radio"]:disabled + label span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background: url(../img/radio-off.svg) left top no-repeat;
+  opacity: 0.1;
+}
+
+input[type="radio"] + label span:hover {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background: url(../img/radio-off.svg) left top no-repeat;
+  opacity: 1
 }
 
 input[type="radio"]:checked + label span {
@@ -194,6 +259,16 @@ input[type="checkbox"] + label span {
   height: 23px;
   vertical-align: middle;
   background: url(../img/checkbox-off.svg) left top no-repeat;
+  opacity: 0.4;
+}
+
+input[type="checkbox"] + label span:hover {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: middle;
+  background: url(../img/checkbox-off.svg) left top no-repeat;
+  opacity: 1;
 }
 
 input[type="checkbox"]:checked + label span {
@@ -202,6 +277,22 @@ input[type="checkbox"]:checked + label span {
   height: 23px;
   vertical-align: middle;
   background: url(../img/checkbox-on.svg) left top no-repeat;
+}
+
+input[type="checkbox"]:disabled + label span {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  vertical-align: middle;
+  background: url(../img/checkbox-on.svg) left top no-repeat;
+  opacity: 0.1;
+}
+
+
+.sorting-type a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .catalog-item::before {
@@ -246,6 +337,37 @@ input[type="checkbox"]:checked + label span {
   text-align: center; 
   vertical-align: middle;
 }
+
+.contact-us span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contact-us p {
+  line-height: 18px;
+}
+
+.tel {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+    
+}
+
+.modal-login h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.modal label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
 .footer-social b {
   font-size: 36px;
   font-weight: 700;
