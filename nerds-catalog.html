@@ -11,29 +11,32 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
-        <ul class="site-navigation">
-          <li>
-            <a href="studio.html">Студия</a>
-          </li>
-          <li>
-            <a href="clients.html">Клиенты</a>
-          </li>
-          <li class="site-navigation-current">
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>     
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li>
+              <a href="studio.html">Студия</a>
+            </li>
+            <li>
+              <a href="clients.html">Клиенты</a>
+            </li>
+            <li class="site-navigation-current">
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
       <a class="cart" href="cart.html">Корзина</a> 
+      </nav>       
     </header>
     <main class="container">
       <div class="title">
         <h1 class="page-title">Магазин готовых шаблонов</h1>
       </div>
+      <div class="wrapper">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -98,6 +101,7 @@
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
+      <div class="sorting-catalog-wrapper">
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка шаблонов</h2>
         <h3>Сортировать:</h3>
@@ -125,7 +129,6 @@
         <h2 class="visually-hidden">Список шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p class="browser"></p>
             <img class="catalog-item-image" src="img/sedona.jpg" width="360" height="576" alt="Сайт Седона">        
             <div class="catalog-item-card">
               <h3 class="catalog-item-title"><a href="#">Sedona</a></h3>
@@ -184,34 +187,38 @@
           <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li class="pagination-item-next">
+          <li class="pagination-item next">
             <a href="#">Следующая</a>
           </li>
         </ul>
       </section>
+        </div>
+        </div>
       <div class="map">
         <img src="img/Map.png" alt="Схема расположения дизайн-студии Нёрдс">
         <div class="contact-us">
           <span>Nёrds disign studio</span>
           <p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
-          <a class="tel" href="tel:88122752525">тел.+7(812)275-75-75</a><br>
-          <a class="letter-button" href="letter.html">Напишите нам</a>
+          <a class="tel" href="tel:88122752525">тел. +7 (812) 275-75-75</a><br>
+          <a class="button letter-button" href="letter.html">Напишите нам</a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10 % для друзей из социальных сетей</p>
-        <ul>
-          <li>            
-            <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">В контакте</a>
+        <div class="social-wrapper">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10 % для друзей из социальных сетей</p>
+        </div>
+        <ul class="social-button-wrapper">
+          <li>
+            <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a>
+            <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a>
+            <a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
           </li>
         </ul>
       </div>

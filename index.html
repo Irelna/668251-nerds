@@ -11,24 +11,26 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
-        <ul class="site-navigation">
-          <li>
-            <a href="studio.html">Студия</a>
-          </li>
-          <li>
-            <a href="clients.html">Клиенты</a>
-          </li>
-          <li>
-            <a href="nerds-catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="cart" href="cart.html">Корзина</a> 
+        <div class="main-navigation-wrapper">  
+          <ul class="site-navigation">
+            <li>
+              <a href="studio.html">Студия</a>
+            </li>
+            <li>
+              <a href="clients.html">Клиенты</a>
+            </li>
+            <li>
+              <a href="nerds-catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <a class="cart" href="cart.html">Корзина</a>
+      </nav>       
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
@@ -47,20 +49,17 @@
             <li class="slide">
               <h3>Долго, дорого,<br> скрупулезно.</h3>
               <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
-              <img src=img/slide1.png width="698" height="413" alt="Слайд 1">
+              <a class="slider-item-button button" href="#">Узнать больше</a>              
             </li>
             <li class="slide">
               <h3>Любим математику как никто другой</h3>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
-              <img src=img/slide2.png width="663" height="430" alt="Слайд 2">
+              <a class="slider-item-button button" href="#">Узнать больше</a>              
             </li>
             <li class="slide">
               <h3>Только ночь,<br> только хардкор</h3>
               <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
               <a class="slider-item-button button" href="#">Узнать больше</a>
-              <img src=img/slide3.png width="759" height="411" alt="Слайд 3">
             </li>
           </ul>
         </div>
@@ -68,56 +67,58 @@
       <section class="service">
         <h2 class="visually-hidden">Услуги</h2>
         <section class="web">
-          <img src="img/web.png" alt="Иллюстрация 1">
+          <img src="img/web.png" width="300" height="146" alt="Иллюстрация 1">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним<br> после того как увидит ваш сайт</p>
-          <a class="button order-button-1" href="nerds-catalog.html">Заказать</a>
+          <a class="button order-button button-1" href="nerds-catalog.html">Заказать</a>
         </section>
         <section class="apps">
           <img src="img/apps.png" alt="Иллюстрация 2">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в<br> AppStore Google и Play</p>
-          <a class="button order-button-2" href="nerds-catalog2.html">Заказать</a>
+          <a class="button order-button button-2" href="nerds-catalog2.html">Заказать</a>
         </section>
         <section class="presentations">
           <img src="img/presentarions.png" alt="Иллюстрация 3">
           <h3 class="service-item">Презентации</h3>
           <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
-          <a class="button order-button-3" href="nerds-catalog3.html">Заказать</a>
+          <a class="button order-button button-3" href="nerds-catalog3.html">Заказать</a>
         </section>
       </section>
       <section class="about-us">
         <h2 class="visually-hidden">Коротко о нас</h2>
         <div class="services">
-          <strong>Мы - маленькая, но гордая дизайн-студия из Краснодара</strong>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <b>Выполняем заказы на разработку:</b>
-          <ul class="orders-list">
-            <li><span></span>Веб-сайтов любой сложности</li>
-            <li><span></span>Мобильных приложений для iOS и Android</li>
-            <li><span></span>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-        </div>
-        <div class="statistics">
-          <img src="img/nerds.png" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
-          <table class="statistics">
-            <caption>С 2004 года любим точность во всем:</caption>
-            <tr>
-              <td>146<sup>%</sup></td>
-              <td>100<sup>%</sup></td>
-              <td>50<sup>%</sup></td>
-            </tr>
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
-            </tr>
-          </table>
+          <div class="services-wrapper">
+            <strong>Мы - маленькая, но гордая дизайн-студия из Краснодара.</strong>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <b>Выполняем заказы на разработку:</b>
+            <ul class="orders-list">
+              <li><span></span>Веб-сайтов любой сложности</li>
+              <li><span></span>Мобильных приложений для iOS и Android</li>
+              <li><span></span>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="statistics">
+            <img src="img/nerds.png" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
+            <table class="statistics">
+              <caption>С 2004 года любим точность во всем:</caption>
+              <tr>
+                <td>146<sup>%</sup></td>
+                <td>100<sup>%</sup></td>
+                <td>50<sup>%</sup></td>
+              </tr>
+              <tr>
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
       <div class="clients">
         <h2 class="visually-hidden">Наши клиенты</h2>
-        <ul class="clients">
+        <ul class="clients-list">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-html-academy.png" width="199" height="68" alt="Логотип HTML-Академии">
@@ -135,28 +136,30 @@
         </ul>
       </div>
       <div class="map">
-        <img src="img/Map.png" alt="Схема расположения дизайн-студии Нёрдс">
+        <img src="img/Map.png" width="1440" height="420" alt="Схема расположения дизайн-студии Нёрдс">
         <div class="contact-us">
           <span>Nёrds disign studio</span>
           <p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
-          <a class="tel" href="tel:88122752525">тел.+7(812)275-75-75</a><br>
+          <a class="tel" href="tel:88122752525">тел. +7 (812) 275-75-75</a><br>
           <a class="button letter-button" href="letter.html">Напишите нам</a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10 % для друзей из социальных сетей</p>
-        <ul>
+        <div class="social-wrapper">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10 % для друзей из социальных сетей</p>
+        </div>
+        <ul class="social-button-wrapper">
           <li>
-            <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">В контакте</a>
+            <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a>
+            <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
           </li>
           <li>
-            <a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a>
+            <a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
           </li>
         </ul>
       </div>
