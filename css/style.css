@@ -30,14 +30,14 @@ fieldset {
 
 .main-container,
 .slider-container {
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 140px;
+  padding: 0 20px;
  
 }
 
 .map-container {
-  margin: 0 -140px;
+  margin-left: -120px;
 }
 
 .main-footer {
@@ -184,6 +184,7 @@ fieldset {
 }
 
 .slide p {
+  color: #283136;
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
@@ -199,6 +200,7 @@ fieldset {
 }
 
 .service p {
+  color: #283136;
   text-align: left;  
 }
 
@@ -240,6 +242,7 @@ fieldset {
 
 .services p {
   display: block;
+  color: #283136;
   margin-top: 40px;
   margin-bottom: 45px;
 }
@@ -277,6 +280,7 @@ fieldset {
 }
 
 .statistics tr:nth-child(2) {
+  color: #283136;
   line-height: 20px;
 }
  sup {
@@ -289,6 +293,7 @@ fieldset {
 }
 
 .orders-list li {
+  color: #283136;
   line-height: 48px;
 }
 
@@ -330,7 +335,7 @@ fieldset {
 .title {
   display: block;
   box-sizing: border-box;
-  
+  text-align: center;
   background-color: #eeeeee;
   padding-top: 45px;
   padding-bottom: 103px;
@@ -570,8 +575,10 @@ input[type="checkbox"]:disabled + label span {
 }
 
 .pagination-item a {
-  display: block;
+  display: flex;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   font-size: 18px;
@@ -582,9 +589,7 @@ input[type="checkbox"]:disabled + label span {
   background: #eeeeee;
   border: 3px solid #eeeeee;
   border-radius: 3px;
-  text-align: center;
 }
-
 
 .pagination-item a:hover,
 .pagination-item a:focus {
@@ -592,7 +597,9 @@ input[type="checkbox"]:disabled + label span {
   border: 3px solid #dbdbdb;
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
   background: #ffffff;
   border: 3px solid #dbdbdb;
 }
@@ -606,7 +613,7 @@ input[type="checkbox"]:disabled + label span {
   display: block;
   margin-top: 80px;
   margin-left: 0;
-  text-align: centr;
+ 
   position: relative;
 }
 
@@ -651,6 +658,10 @@ input[type="checkbox"]:disabled + label span {
 
 .modal-login {
   display: none;
+  width: 960px;
+  height: 590px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .modal-login h2 {
@@ -664,6 +675,20 @@ input[type="checkbox"]:disabled + label span {
   font-weight: 700;
   line-height: 18px;
 }
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.input-user-letter {
+  width: 760px;
+  height: 120px;
+}
+
+input[type="text"] + label span {
+  display: inline-block;
+  width: 25px;
+    height: 25px;}
 
 .footer-social {
   display: flex;
@@ -718,17 +743,12 @@ input[type="checkbox"]:disabled + label span {
   background-color: #d7373b;
 }
 
-html {
-  min-width: 1440px;  
-}
+
 
 .main-navigation {
   display: flex;
   min-height: 115px; 
-  padding-top: 50px;
-  padding-left: 140p;
-  padding-right: 140p;
-  
+  padding-top: 50px;  
 }
  
 .main-header-logo {
@@ -749,7 +769,7 @@ html {
 .service {
   display: flex;
   width: 1100px;
-  padding-right: 60px;
+  
   margin-top: 80px;
   padding-bottom: 80px;
   justify-content: space-between;
