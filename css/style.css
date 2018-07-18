@@ -28,6 +28,13 @@ fieldset {
   border: 0px solid;
 }
 
+.main-container,
+.slider-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -128,7 +135,6 @@ fieldset {
 .slider {
   position: relative;
   background: #eeeeee;
-  padding-left: 140px;
 }
 
 .slide {
@@ -305,7 +311,6 @@ fieldset {
   display: flex;
   width: 1160px;
   height: 180px;
-  margin-left: 140px;
   margin-bottom: 80px;
   justify-content: space-between;
   align-items: center;
@@ -316,7 +321,7 @@ fieldset {
 .title {
   display: block;
   box-sizing: border-box;
-  width: 1440px;
+  
   background-color: #eeeeee;
   padding-top: 45px;
   padding-bottom: 103px;
@@ -710,8 +715,8 @@ html {
   display: flex;
   min-height: 115px; 
   padding-top: 50px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-left: 140p;
+  padding-right: 140p;
   
 }
  
@@ -733,7 +738,6 @@ html {
 .service {
   display: flex;
   width: 1100px;
-  margin-left: 140px;
   padding-right: 60px;
   margin-top: 80px;
   padding-bottom: 80px;
@@ -745,7 +749,6 @@ html {
 .services {
   display: flex;
   width: 1160px;
-  margin-left: 140px;
   margin-top: 40px;
   margin-bottom: 77px;
   justify-content: space-between;
@@ -760,7 +763,6 @@ html {
 .wrapper {
   display: flex;
   width: 300px;
-  margin-left: 140px;
   margin-top: 60px;
   align-items: flex-start;
 }
