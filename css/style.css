@@ -30,9 +30,18 @@ fieldset {
 
 .main-container,
 .slider-container {
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 140px;
+ 
+}
+
+.map-container {
+  margin: 0 -140px;
+}
+
+.main-footer {
+  
 }
 
 .visually-hidden {
@@ -592,11 +601,13 @@ input[type="checkbox"]:disabled + label span {
   width: 260px;
 }
 
+
 .map {
   display: block;
   margin-top: 80px;
-
-  position: relative
+  margin-left: 0;
+  text-align: centr;
+  position: relative;
 }
 
 .contact-us {
@@ -657,21 +668,21 @@ input[type="checkbox"]:disabled + label span {
 .footer-social {
   display: flex;
   flex-direction: row-reverse;
-  height: 220px;
+  height: 220px; 
+  justify-content: flex-end;
   align-items: center;
+  margin-left: -12px;
 }
 
 .social-wrapper {
   display: block;
-  box-sizing: border-box;
-  width: 900px;
-  padding-top: 18px;
-  
+  box-sizing: border-box;  
+  padding-top: 18px;  
 }
 
 .social-button-wrapper {
   display: flex;  
-  margin: auto;  
+  margin-right: 140px;  
   align-items: center;
 }
 
