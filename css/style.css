@@ -20,7 +20,7 @@ a {
 }
 
 button {
-  outline: none;
+  outline-style: none;
 }
 
 
@@ -503,6 +503,10 @@ input[type="radio"]:focus + label::before {
   opacity: 1;
 }
 
+input[type="radio"]:focus + label {
+  color: #000000;
+}
+
 input[type="radio"]:checked + label::before { 
   background: url(../img/radio-on.svg) left top no-repeat;
 }
@@ -541,6 +545,10 @@ input[type="checkbox"]:disabled + label::before {
 .filter-button:hover,
 .filter-button:focus {
   background: #dfdfdf;
+}
+
+.filter-button:focus {
+  outline-width: 0;
 }
 
 .filter-button:active {
@@ -608,6 +616,7 @@ input[type="checkbox"]:disabled + label::before {
   opacity: 1;    
  }
 
+
 .catalog-item-card {
   display: block;
   box-sizing: border-box;
@@ -616,18 +625,24 @@ input[type="checkbox"]:disabled + label::before {
   width:  360px;
   min-height: 230px;
   position: relative;
-  bottom: 255px;
+  bottom: 257px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 45px;
-  margin-bottom: -225px;
- }
+  padding-bottom: 43px;
+  margin-bottom: -227px;
+}
 
 .catalog-item-card:hover {
   opacity: 1;
 }
 
+.hide:focus + .catalog-item-card {
+  opacity: 1;
+}
+
 .catalog-item-title {
+  display: block;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -635,23 +650,23 @@ input[type="checkbox"]:disabled + label::before {
   padding-top: 30px;
 }
 
+.card:focus ~ .catalog-item-card {
+  opacity: 1;
+}
 .catalog-item-card p {
+  box-sizing: border-box;
   line-height: 18px;  ;
   color: #666666;
   text-align: center; 
-  vertical-align: middle;
 }
 
 
 .button-price {
+  box-sizing: border-box;
   width: 200px;
   margin-left: 80px;
-  margin-top: 30px;
 }
 
-,button-price {
-  opacity: 1;
-}
 
 .pagination-item a {
   display: flex;
