@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -7,7 +5,7 @@
     <title>Нёрдс главная</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel=stylesheet type="text/css" href="css/style.css">   
+    <link rel=stylesheet type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -137,16 +135,17 @@
             </li>
           </ul>
         </div>
-        <div class="map-container">
-          <div class="map">
-            <img src="img/Map.png" alt="Схема расположения дизайн-студии Нёрдс">
-            <div class="contact-us">
-              <span>Nёrds disign studio</span>
-              <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-              <a class="tel" href="tel:88122752525">тел. +7 (812) 275-75-75</a><br>
-              <a class="letter-button button" href="letter.html">Напишите нам</a>
-            </div>
-          </div>
+      </div>
+      <div class="map-container">
+        <img class="map-img" src="img/map.png" alt="Схема расположения дизайн-студии Нёрдс">             
+        <div class="yandex-map">     
+          <iframe  src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3ff6a1d81712ca3e4ad0da607a3c8943591cb01ef6dd0906b7117e7f5de6b8e&amp;source=constructor" ></iframe>
+        </div>
+        <div class="contact-us">
+          <span>Nёrds disign studio</span>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <a class="tel" href="tel:88122752525">тел. +7 (812) 275-75-75</a><br>
+          <a class="button letter-button" href="letter.html">Напишите нам</a>
         </div>
       </div>
     </main>
@@ -186,13 +185,13 @@
         </div>
         <p>
           <label class="modal" for="letter">Текст письма:</label><br>
-          <textarea class="input-user-letter" id="leter" name="letter" rows="4" cols="85" placeholder="В свободной форме"></textarea>
+          <textarea class="input-user-letter" id="letter" name="letter" rows="4" cols="85" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button button-modal" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-   <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
 

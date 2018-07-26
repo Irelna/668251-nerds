@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  padding: 0px;
-  min-width: 1200px;
-  
+  padding: 0;
+  min-width: 1200px;  
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -23,7 +22,6 @@ button {
   outline-style: none;
 }
 
-
 ul {
   list-style: none;
   margin: 0;
@@ -40,16 +38,7 @@ fieldset {
   box-sizing: border-box;
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px;
- 
-}
-
-.map-container {
-  margin-left: -140px;
-}
-
-.main-footer {
-  
+  padding-right: 20px; 
 }
 
 .visually-hidden {
@@ -73,8 +62,7 @@ fieldset {
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
-  text-transform: uppercase;
-    
+  text-transform: uppercase;    
   background-color: #fb565a;
   border-radius: 3px;
   border: none;  
@@ -93,8 +81,8 @@ fieldset {
 
 .main-header {
   background-color: #eeeeee;
+  overflow: hidden;
 }
-
 
 .main-navigation {
   display: flex;
@@ -292,7 +280,6 @@ site-navigation li:nth-child(3) {
   margin-bottom: 40px;
 }
 
-
 .service {
   display: flex;
   width: 1100px;  
@@ -467,8 +454,7 @@ sup {
   display: block;
   position: absolute;
   width: 25px;
-  height: 2px;
-  
+  height: 2px;  
   margin-left: -35px;
   margin-top: 22px;
   }
@@ -482,18 +468,13 @@ sup {
   text-align: center;
   padding-top: 50%;
   padding-bottom: 50%;
-  opacity:  0.2;
- 
+  opacity:  0.2; 
 }
 
 .clients li:hover {
-  opacity:  1; 
-  
+  opacity:  1;   
 }
 
-.test:focus {
-  opacity: 1;
-}
 .clients li a:active {
   opacity:  0.1;
 }
@@ -657,7 +638,6 @@ sup {
   opacity: 0.3;
 }
 
-
 .filter-option label {
   display: inline-block;
   position: relative;
@@ -760,7 +740,6 @@ input[type="checkbox"]:disabled + label::before {
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: -15p;
   margin-left: 22px;
   margin-right: 265px;
 }
@@ -915,7 +894,7 @@ input[type="checkbox"]:disabled + label::before {
   display: flex;
   margin-left: 23px;
   margin-top: -33px;
-  margin-bottom: -20px;
+  margin-bottom: 60px;
 }
 
 .pagination-item a {
@@ -952,7 +931,6 @@ input[type="checkbox"]:disabled + label::before {
   border: 3px solid #dbdbdb;
 }
 
-
 .next a {
   font-size: 16px;
   font-weight: 500;
@@ -960,12 +938,31 @@ input[type="checkbox"]:disabled + label::before {
   width: 260px;
 }
 
-
-.map {
+.map-container {
   display: block;
-  margin-top: 80px;
-  margin-left: 0;
   position: relative;
+  min-height: 416px;
+  overflow: hidden;
+}
+
+.map-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.yandex-map {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.yandex-map iframe {
+  border: 0;
+  width: 100%;
+  height: 416px;
 }
 
 .contact-us {
@@ -974,13 +971,14 @@ input[type="checkbox"]:disabled + label::before {
   width: 320px;
   height: 308px;
   position: absolute;
+  left: calc(50% - 580px);
   padding-left: 50px;
   padding-top: 48px;
   padding-bottom: 40px;
-  left: 140px;
   top: 54px;
   background-color: #ffffff;
 }
+
 
 .contact-us span {
   font-size: 18px;
@@ -992,7 +990,7 @@ input[type="checkbox"]:disabled + label::before {
 .contact-us p {
   line-height: 18px;
   color: #666666;
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .tel {
@@ -1021,13 +1019,12 @@ input[type="checkbox"]:disabled + label::before {
 .social-wrapper {
   display: block;
   box-sizing: border-box;  
- 
+  margin-top: 18px;
 }
 
 .social-button-wrapper {
   display: flex;  
   margin-right: 142px; 
-  margin-top: -18px;
   align-items: center;
 }
 
@@ -1035,6 +1032,7 @@ input[type="checkbox"]:disabled + label::before {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  
 }
 
 .social-wrapper p {
@@ -1105,8 +1103,7 @@ input[type="checkbox"]:disabled + label::before {
   width: 960px;
   min-height: 590px;
   padding-left: 100px;
-  padding-right: 100px;
-  
+  padding-right: 100px;  
   box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
 }
 
@@ -1247,5 +1244,3 @@ input[type="checkbox"]:disabled + label::before {
   margin-top: 45px;
   padding: 15px 0;
 }
-
-
